@@ -9,7 +9,7 @@ My professional website still under construction
 
 # Deploy
 
-To deploy website, push main, run deploy action on github.
+ Use the `Deploy Jekyll site to Pages` action.
 
 # Modify bootstrap included modules
 
