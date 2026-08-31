@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
+  },
+  "scripts": {
+    "build-bootstrap": "webpack build --mode=production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "css-loader": "^7.1.5",
+    "html-webpack-plugin": "^5.6.8",
+    "postcss-loader": "^8.2.1",
+    "sass": "^1.99.0",
+    "sass-loader": "^16.0.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.110.2",
+    "webpack-cli": "^7.2.3"
+  }
+}
