@@ -11,7 +11,7 @@ My professional website still under construction
 
  Use the `Deploy Jekyll site to Pages` action.
 
-# Modify bootstrap included modules
+# Modify layout style
 
-1. Do your changes in `/bootstrap/js/main.js` or `/bootstrap/scss/styles.js`
-2. Run `npm run build-bootstrap`
+1. Do your changes in `/src`
+2. Build changes in `docs` running `npm run build`
