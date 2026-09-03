@@ -1,5 +1,26 @@
-<div class="container-fluid text-bg-dark p-3">
-  <div>Contact</div>
-  <div><span>E-mail : {{ site.data.me.email }}</span></div>
-  <div><span>Téléphone : {{ site.data.me.phone }}</span></div>
-</div>
+<footer class="bd-footer py-4 py-md-5 mt-5 bg-body-secondary">
+  <div class="container-md py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+    <div class="row align-items-center">
+      <div class="col mb-3">
+        {% include logo.html %}
+        <ul class="list-unstyled small">
+          <li class="mb-2">E-mail : {{ site.data.me.email }}</li>
+          <li class="mb-2">Téléphone : {{ site.data.me.phone }}</li>
+        </ul>
+      </div>
+      <div class="col d-none d-md-block mb-3 text-center">
+        <div class="d-inline-block text-start">
+          <h5>Liens</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="/">Accueil</a></li>
+            <li class="mb-2"><a href="/ma-pratique">Ma pratique</a></li>
+            <li class="mb-2"><a href="/mon-parcours">Mon parcours</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col mb-3 text-end">
+        {% include book-button.html class="btn-primary" %}
+      </div>
+    </div>
+  </div>
+</footer>

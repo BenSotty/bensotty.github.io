@@ -5,8 +5,6 @@ title: Benjamin Sotty, ostéopathe à Rennes, Romillé, Saint-Grégroie et à do
 
 # Les présentations
 
-Chers patients
-
 Je m'appelle Benjamin Sotty, j'ai 40 ans, je suis ostéopathe, j'ai été formé à l'Institut d'Ostéopathie Rennes-Bretagne.
 J'exerce dans l'agglomération rennaise, en collaboration avec Kévin Castel et Marine Joalland et à domicile.
 [Plus d'information sur mes lieux d'exercice](#mes-lieux-d-exercice).

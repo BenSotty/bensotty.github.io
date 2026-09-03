@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/app.js',
+  entry: './docs/assets/js/app.js',
   output: {
     filename: 'app-min.js',
     path: path.resolve(__dirname, 'docs/dist')

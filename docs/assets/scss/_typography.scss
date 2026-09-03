@@ -153,6 +153,18 @@ body {
   color: $dark;
 }
 
+.text-serif {
+  font-family: $font-family-serif;
+}
+
+.text-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
 #page-content {
   h1 {
     font-family: $font-family-sans-serif;
@@ -176,13 +188,11 @@ body {
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
-    -webkit-font-smoothing: antialiased;
   }
 
   strong {
     font-family: $font-family-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    -webkit-font-smoothing: antialiased;
   }
 }
