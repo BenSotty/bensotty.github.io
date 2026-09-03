@@ -4,12 +4,17 @@
     <meta name="robots" content="noindex, nofollow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-    <script defer src="{{ '/assets/js/bootstrap.js' | relative_url }}"></script>
+    <script defer src="{{ '/dist/app-min.js' | relative_url }}"></script>
   </head>
   <body>
     {% include header.html %}
-    {{ content }}
+    <div class="container p-3">
+      <div class="row">
+        <div id="page-content" class="col">
+          {{ content }}
+        </div>
+      </div>
+    </div>
     {% include footer.html %}
   </body>
 </html>
