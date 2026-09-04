@@ -9,17 +9,8 @@ module.exports = {
   entry: './docs/assets/js/app.js',
   output: {
     filename: 'app-min.js',
-    // path: path.resolve(__dirname, 'docs/dist')
     path: path.resolve(__dirname, '_site/dist')
   },
-  // devServer: {
-  //   static: path.resolve(__dirname, 'dist'),
-  //   port: 8080,
-  //   hot: true
-  // },
-  plugins: [
-    // new HtmlWebpackPlugin({ template: './bootstrap/index.html' })
-  ],
   module: {
     rules: [
       {

@@ -1,7 +1,15 @@
 # Benjamin Sotty
 My professional website still under construction
 
-# Run local server:
+# Develop:
+
+Build scss and js assets while developing:
+
+```
+  npm run watch
+```
+
+Serve and build while developing:
 
 ```
   bundle exec jekyll serve
@@ -10,8 +18,3 @@ My professional website still under construction
 # Deploy
 
  Use the `Deploy Jekyll site to Pages` action.
-
-# Modify layout style
-
-1. Do your changes in `/src`
-2. Build changes in `docs` running `npm run build`
