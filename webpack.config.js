@@ -9,7 +9,8 @@ module.exports = {
   entry: './docs/assets/js/app.js',
   output: {
     filename: 'app-min.js',
-    path: path.resolve(__dirname, 'docs/dist')
+    // path: path.resolve(__dirname, 'docs/dist')
+    path: path.resolve(__dirname, '_site/dist')
   },
   // devServer: {
   //   static: path.resolve(__dirname, 'dist'),
