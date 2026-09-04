@@ -1,0 +1,18 @@
+at-home:
+  radius: 20
+  price: 70
+st-gregoire:
+  titulaire: "Kévin Castel"
+  address: "1 Rue de l'Église, 35760 Saint-Grégoire"
+  price: 62
+  booking-url: https://www.doctolib.fr/osteopathe/saint-gregoire/kevin-castel/booking/motives?specialityId=10&telehealth=false&placeId=practice-207499&source=profile
+romille:
+  titulaire: "Marine Joalland"
+  address: "1 Rue Jean Guéhenno, 35850 Romillé"
+  price: 55
+  booking-url: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland/booking/motives?specialityId=10&telehealth=false&placeId=practice-30338&source=profile
+rennes:
+  titulaire: "Marine Joalland"
+  address: "Batiment 3, 2 Rue du Bignon, 35000 Rennes"
+  price: 55
+  booking-url: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland/booking/motives?specialityId=10&telehealth=false&placeId=practice-30444&source=profile

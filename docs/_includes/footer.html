@@ -1,11 +1,14 @@
 <footer class="bd-footer py-4 py-md-5 bg-body-secondary">
-  <div class="container-md py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+  <div class="container-md py-sm-4 py-md-5 px-sm-4 text-body-secondary">
     <div class="row align-items-center">
       <div class="col mb-3">
         {% include logo.html %}
         <ul class="list-unstyled small">
-          <li class="mb-2">E-mail : {{ site.data.me.email }}</li>
-          <li class="mb-2">Téléphone : {{ site.data.me.phone }}</li>
+          <li class="mb-2"><span class="d-none d-sm-inline">E-mail : </span>{{ site.data.me.email }}</li>
+          <li class="mb-2"><span class="d-none d-sm-inline">Téléphone : </span>{{ site.data.me.phone }}</li>
+          <li class="mb-2">
+            <a href="{{ site.data.me.linkedin }}" target="_blank">LinkedIn</a>
+          </li>
         </ul>
       </div>
       <div class="col d-none d-md-block mb-3 text-center">

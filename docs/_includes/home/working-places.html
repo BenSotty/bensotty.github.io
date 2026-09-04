@@ -1,0 +1,83 @@
+<section class="working-places py-4 position-relative">
+  <h1 class="text-center mb-4">Lieux de consultation</h1>
+  <div class="container-md">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img
+            src="{{ '/assets/images/working-places/at-home-map.png' | relative_url }}"
+            alt="Carte montrant zone de consultation à domicile dans un rayon de {{ site.data.working-places.at-home.radius }}km autour de Rennes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">À domicile</h5>
+            <p class="card-subtitle mb-2 text-body-secondary text-sans-serif">{{ site.data.working-places.at-home.radius }} km autour de Rennes</p>
+            <p class="card-text">Durée de consultation : 45min - 1h</p>
+            <p class="card-text">Tarif : {{ site.data.working-places.at-home.price }} €</p>
+            <p class="card-text">Horaires : selon les disponibilités</p>
+            <p class="card-text">Reservation : {{ site.data.me.phone }} (SMS)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img
+            src="{{ '/assets/images/working-places/st-gregoire-salle-de-consultation.png' | relative_url }}"
+            alt="Carte montrant l'adresse du cabinet de Saint-Grégoire"
+          />
+          <div class="card-body">
+            <h5 class="card-title">À Saint-Grégoire</h5>
+            <p class="card-subtitle mb-2 text-body-secondary text-sans-serif">En collaboration avec {{ site.data.working-places.st-gregoire.titulaire }}</p>
+            <p class="card-text">Durée de consultation : 45 min - 1 h</p>
+            <p class="card-text">Tarif : {{ site.data.working-places.st-gregoire.price }} €</p>
+            <p class="card-text">Horaires : mardi (14h à 19h), samedi (9h, 16h) et plus certaines semaines</p>
+            <p class="card-text">
+              <a href="{{ site.data.working-places.st-gregoire.booking-url }}" target="_blank">
+                Reservation : via le Doctolib de {{ site.data.working-places.st-gregoire.titulaire }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img
+            src="{{ '/assets/images/working-places/romille-salle-de-consultation.png' | relative_url }}"
+            alt="Carte montrant l'adresse du cabinet de Romillé"
+          />
+          <div class="card-body">
+            <h5 class="card-title">À Romillé</h5>
+            <p class="card-subtitle mb-2 text-body-secondary text-sans-serif">En collaboration avec {{ site.data.working-places.romille.titulaire }}</p>
+            <p class="card-text">Durée de consultation : 45 min - 1 h</p>
+            <p class="card-text">Tarif : {{ site.data.working-places.romille.price }} €</p>
+            <p class="card-text">Horaires : variables selon les semaines</p>
+            <p class="card-text">
+              <a href="{{ site.data.working-places.romille.booking-url }}" target="_blank">
+                Reservation : via le Doctolib de {{ site.data.working-places.romille.titulaire }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img
+            src="{{ '/assets/images/working-places/rennes-map.png' | relative_url }}"
+            alt="Carte montrant l'adresse du cabinet de Rennes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">À Rennes</h5>
+            <p class="card-subtitle mb-2 text-body-secondary text-sans-serif">En collaboration au sein du cabinet de {{ site.data.working-places.rennes.titulaire }}</p>
+            <p class="card-text">Durée de consultation : 45 min - 1 h</p>
+            <p class="card-text">Tarif : {{ site.data.working-places.rennes.price }} €</p>
+            <p class="card-text">Horaires : variables selon les semaines</p>
+            <p class="card-text">
+              <a href="{{ site.data.working-places.rennes.booking-url }}" target="_blank">
+                Reservation : via le Doctolib de {{ site.data.working-places.rennes.titulaire }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
