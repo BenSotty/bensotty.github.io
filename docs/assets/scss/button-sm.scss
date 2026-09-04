@@ -1,0 +1,4 @@
+.btn-responsive {
+  // .btn normal size
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+}

@@ -61,5 +61,18 @@
 
 // 9. Personal dev
 @import "typography";
+@import "button";
 @import "header";
 @import "logo";
+
+// 10. Pages
+@import "home";
+
+@include media-breakpoint-up(sm) {
+  @import "button-sm";
+  @import "home/hero-sm";
+}
+
+@include media-breakpoint-up(lg) {
+  @import "button-lg";
+}

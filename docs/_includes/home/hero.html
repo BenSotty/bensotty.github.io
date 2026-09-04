@@ -1,5 +1,21 @@
-<img
-  src="{{ '/assets/images/hero.png' | relative_url }}"
-  class="w-100" 
-  alt="Photo de cabinet d'ostéopathie"
-/>
+<section class="home-hero position-relative">
+    <img
+    src="{{ '/assets/images/hero.png' | relative_url }}"
+    class="home-hero-bg-img w-100"
+    alt="Photo de cabinet d'ostéopathie"
+  />
+  <div class="home-hero-overlay bg-white position-absolute top-0 end-0 start-0 bottom-0 z-1"></div>
+  <div class="home-hero-text position-absolute top-0 end-0 start-0 bottom-0 z-2">
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 gap-1 gap-sm-2 gap-md-3 gap-lg-4">
+      {% include logo.html class="text-center fs-2" %}
+      <p class="m-0 d-none d-md-block">Prise en charge généraliste</p>
+      <p class="m-0">
+        <span class="d-sm-none">À</span><span class="d-none d-sm-inline">Consultation à</span>&nbsp;<strong>domicile</strong>
+      </p>
+      <p class="m-0">
+        <span class="d-sm-none">En cabinet</span><span class="d-none d-sm-inline">Consultation en cabinet</span>&nbsp;à <strong>Rennes, Saint-Grégoire ou Romillé</strong>
+      </p>
+      {% include book-button.html class="btn-primary btn-responsive" %}
+    </div>
+  </div>
+</section>

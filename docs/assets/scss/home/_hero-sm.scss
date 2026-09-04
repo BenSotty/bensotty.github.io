@@ -1,0 +1,17 @@
+.home-hero {
+  .home-hero-text {
+    .logo-name {
+      @include font-size(2rem);
+    }
+
+    .logo-function {
+      @include font-size(2rem);
+      @include rfs(0.05rem, letter-spacing);
+      @include rfs(2.2rem, line-height);
+    }
+    
+    p {
+      @include font-size(1.25rem);
+    }
+  }
+}

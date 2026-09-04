@@ -10,6 +10,10 @@ header {
   nav {
     position: relative;
 
+    .navbar-brand {
+      outline: 0;
+    }
+
     .offcanvas {
       &:not(.show) {
         .nav-link {
