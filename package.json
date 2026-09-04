@@ -4,7 +4,8 @@
     "bootstrap": "^5.3.8"
   },
   "scripts": {
-    "build-bootstrap": "webpack build --mode=production"
+    "build": "webpack build --mode=production",
+    "watch": "webpack --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.5.4",

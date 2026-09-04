@@ -6,10 +6,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './bootstrap/js/main.js',
+  entry: './docs/assets/js/app.js',
   output: {
-    filename: 'bootstrap.js',
-    path: path.resolve(__dirname, 'docs/assets/js')
+    filename: 'app-min.js',
+    // path: path.resolve(__dirname, 'docs/dist')
+    path: path.resolve(__dirname, '_site/dist')
   },
   // devServer: {
   //   static: path.resolve(__dirname, 'dist'),

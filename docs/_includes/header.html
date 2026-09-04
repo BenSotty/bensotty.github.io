@@ -1,1 +1,32 @@
-<p>header</p>
+<header class="sticky-top bg-primary">
+  <nav class="navbar navbar-expand-md" aria-label="Navigation principale">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white d-flex align-items-center gap-2" href="/">
+        <img src="{{ '/assets/images/profil.jpeg' | relative_url }}" class="rounded-circle d-none d-sm-block" width="50" height="50" alt="Photo de profil de Benjamin Sotty">
+        {% include logo.html %}
+      </a>
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        {% include svg-icons/burger-menu.svg %}
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/ma-pratique">Ma pratique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/mon-parcours">Mon parcours</a>
+            </li>
+            <li class="nav-item">
+              {% include book-button.html class="nav-link" %}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
