@@ -144,14 +144,6 @@
   unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
 }
 
-
-body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: 100%;
-  color: $dark;
-}
-
 .text-serif {
   font-family: $font-family-serif;
 }
