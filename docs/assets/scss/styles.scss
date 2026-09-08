@@ -2,25 +2,14 @@
 //@import "bootstrap/scss/bootstrap";
 
 // Include parts of Bootstrap
-
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "bootstrap/scss/functions";
-
-// 2. Include any default variable overrides here
-@import "variables";
-
-// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "variables"; // Ovverride Bootstrap variables
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
-
-// 4. Include any default map overrides here
-
-// 5. Include remainder of required parts
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-
-// 6. Include any other optional stylesheet partials as desired
+@import "utilities/colors";
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
@@ -52,27 +41,23 @@
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas";
 // @import "bootstrap/scss/placeholders";
-
-// 7. Helpers
 @import "bootstrap/scss/helpers";
-
-// 8. Utilities
 @import "bootstrap/scss/utilities/api";
 
-// 9. icons
+// Include icons
 @import "bootstrap-icons/font/bootstrap-icons";
-
-// 9. Personal dev
+// Include theme
 @import "theme";
 @import "typography";
 @import "button";
 @import "header";
 @import "logo";
+// Include partials
 @import "collapsable";
-
-// 10. Pages
+// pages
 @import "home";
 
+// media
 @include media-breakpoint-up(sm) {
   @import "button-sm";
   @import "home/hero-sm";

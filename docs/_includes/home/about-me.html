@@ -1,10 +1,10 @@
-<section class="home-about-me py-4 bg-primary text-white">
+<section class="home-about-me py-4 bg-blue-200 text-white">
   <div class="container-lg">
     <div class="row align-items-center g-3 g-md-0">
       <div class="col-12 col-md-4 text-center">
         <img
           src="{{ '/assets/images/profil.jpeg' | relative_url }}"
-          class="home-about-me-profil-picture rounded-circle"
+          class="home-about-me-profil-picture rounded-circle border border-4 border-yellow-300"
           alt="Photo de profil de Benjamin Sotty"
           />
       </div>
@@ -13,7 +13,7 @@
           {% for section in site.data.home.about-me %}
             {% assign section-id = "home-about-me-" | append: section.id %}
             <li class="list-group-item">
-              {% include collapsable-header.html id=section-id title=section.title class="text-serif" %}
+              {% include collapsable-header.html id=section-id title=section.title class="text-serif text-blue-600" %}
               <div class="collapse" id="{{ section-id }}">
                 {% if section.content-type == "bullet" %}
                   <ul>
