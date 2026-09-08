@@ -13,5 +13,9 @@
     .collapsable-header-state.expanded {
       display: inline;
     }
+
+    .collapsable-header-title {
+      font-weight: $font-weight-bold;
+    }
   }
 }

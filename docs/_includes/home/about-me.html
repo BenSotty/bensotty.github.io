@@ -1,24 +1,24 @@
-<section class="home-about-me py-4 bg-blue-200 text-white">
+<section class="home-about-me py-4 bg-body-secondary">
   <div class="container-lg">
     <div class="row align-items-center g-3 g-md-0">
       <div class="col-12 col-md-4 text-center">
         <img
           src="{{ '/assets/images/profil.jpeg' | relative_url }}"
-          class="home-about-me-profil-picture rounded-circle border border-4 border-yellow-300"
+          class="home-about-me-profil-picture rounded-circle border border-3 shadow"
           alt="Photo de profil de Benjamin Sotty"
           />
       </div>
       <div class="col-12 col-md-8">
-        <ul class="list-group">
+        <ul class="list-group shadow">
           {% for section in site.data.home.about-me %}
             {% assign section-id = "home-about-me-" | append: section.id %}
             <li class="list-group-item">
-              {% include collapsable-header.html id=section-id title=section.title class="text-serif text-blue-600" %}
-              <div class="collapse" id="{{ section-id }}">
+              {% include collapsable-header.html id=section-id title=section.title class="text-serif" %}
+              <div class="collapse py-2 px-3 my-2 border-top" id="{{ section-id }}">
                 {% if section.content-type == "bullet" %}
                   <ul>
                     {% for item in section.content %}
-                      <li>{{ item }}</li>
+                      <li><p>{{ item }}</p></li>
                     {% endfor %}
                   </ul>
                 {% else %}
