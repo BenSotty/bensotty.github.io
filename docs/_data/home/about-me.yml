@@ -1,0 +1,46 @@
+- id: education
+  title: Diplôme d'Ostéopathe (D.O.) en 5 ans
+  content-type: bullet
+  content:
+    - Diplômé de <a href="https://www.osteo-rennes.fr/" target="_blank">l'Institut d'Ostépatie Rennes-Bretagne</a>, en 5 ans
+    - <a href="https://www.osteo-rennes.fr/ecole-osteopathie-ministere-de-la-sante.php" target="_blank">École agréée par le Ministère de la Santé</a>
+    - <a href="https://www.francecompetences.fr/recherche/rncp/41967/" target="_blank">Certification professionnelle de niveau 7, enregistrée au Répertoire National des Certifications Professionnelles (RNCP)</a>
+- id: patient-centered
+  title: Vous écouter avant de vous traiter
+  content-type: text
+  content:
+    - "Chaque patient arrive avec son propre vécu, ses attentes et ses objectifs.
+      Je prends donc le temps de vous écouter et de comprendre ce qui vous amène à consulter, afin de construire avec vous une prise en charge adaptée à votre situation."
+    - "Votre consentement occupe une place essentielle dans ma pratique : les techniques et les modalités de traitement sont expliquées et discutées avec vous.
+      Je privilégie une relation de soin basée sur l’échange, la confiance et la collaboration."
+    - "TODO: add EM topo"
+- id: osteopathy-only
+  title: De l'ostéopathie, rien de plus
+  content-type: text
+  content:
+    - "Je suis attaché à ce qui fait la spécificité de l’ostéopathie : une approche globale du patient et une attention portée aux interactions entre les différentes régions et fonctions du corps."
+    - "Je n'utilise que des techniques manuelles ostéopathiques, choisies en fonction de votre situation et de vos préférences."
+    - "L'ensemble de ces techniques me permettent d'élaborer un soin complet."
+- id: science
+  title: Des décisions guidées par les données scientifiques
+  content-type: text
+  content:
+    - "Mon raisonnement clinique s’appuie sur les connaissances scientifiques disponibles et sur l’évaluation de chaque situation individuelle.
+      Les données issues de la recherche constituent un élément important dans mes décisions thérapeutiques, au même titre que mon expérience clinique et vos préférences."
+    - "L’objectif n’est pas d’appliquer systématiquement une technique ou un protocole, mais de choisir avec vous les options les plus pertinentes au regard de votre situation, de vos attentes et des connaissances actuelles."
+- id: empowerment
+  title: Vous donner les moyens d’agir
+  content-type: text
+  content:
+    - "Une consultation ne se limite pas nécessairement au traitement manuel.
+      Lorsque cela est pertinent, je peux vous proposer des exercices, des étirements ou des conseils adaptés à votre situation afin de vous aider à retrouver progressivement de l’autonomie."
+    - "Ces conseils s’appuient eux aussi sur les connaissances scientifiques disponibles et sont adaptés à vos capacités, vos objectifs et votre quotidien.
+      L’idée est de vous donner des outils que vous pouvez réellement intégrer dans votre vie, plutôt que de vous demander de suivre un programme standardisé."
+- id: interdisciplinarity
+  title: Une vision globale du parcours de soin
+  content-type: text
+  content:
+    - "L’ostéopathie peut avoir sa place dans un parcours de soins plus large.
+      Lorsque votre situation le nécessite, je peux vous recommander de consulter un autre professionnel de santé ou de travailler en complémentarité avec lui."
+    - "Médecin, kinésithérapeute, sage-femme, podologue, psychologue ou autre professionnel :
+      lorsque plusieurs compétences peuvent être utiles, je considère la collaboration et l’orientation comme faisant partie intégrante d’une prise en charge de qualité."

@@ -1,0 +1,17 @@
+.collapsable-header {
+  .collapsable-header-state {
+    display: none;
+  }
+
+  &.collapsed {
+    .collapsable-header-state.collapsed {
+      display: inline;
+    }
+  }
+
+  &:not(.collapsed) {
+    .collapsable-header-state.expanded {
+      display: inline;
+    }
+  }
+}
