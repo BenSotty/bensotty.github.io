@@ -1,5 +1,5 @@
 // Import CSS
-import '../scss/styles.scss'
+import '../scss/styles.scss';
 
 // Specify Bootsrap plugins
 import {
@@ -15,4 +15,11 @@ import {
 // Tab,
 // Toast,
 // Tooltip
-} from 'bootstrap'
+} from 'bootstrap';
+
+import OnDomReady from './on-dom-ready';
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  new OnDomReady().run();
+});

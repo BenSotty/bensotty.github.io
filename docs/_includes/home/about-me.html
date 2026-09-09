@@ -1,36 +1,32 @@
-<section class="home-about-me py-4 bg-body-secondary">
+<section class="home-about-me">
   <div class="container-lg">
-    <div class="row align-items-center g-3 g-md-0">
-      <div class="col-12 col-md-4 text-center">
-        <img
-          src="{{ '/assets/images/profil.jpeg' | relative_url }}"
-          class="home-about-me-profil-picture rounded-circle border border-3 shadow"
-          alt="Photo de profil de Benjamin Sotty"
-          />
-      </div>
-      <div class="col-12 col-md-8">
-        <ul class="list-group shadow">
-          {% for section in site.data.home.about-me %}
-            {% assign section-id = "home-about-me-" | append: section.id %}
-            <li class="list-group-item">
-              {% include collapsable-header.html id=section-id title=section.title class="text-serif" %}
-              <div class="collapse py-2 px-3 my-2 border-top" id="{{ section-id }}">
-                {% if section.content-type == "bullet" %}
-                  <ul>
-                    {% for item in section.content %}
-                      <li><p>{{ item }}</p></li>
-                    {% endfor %}
-                  </ul>
-                {% else %}
-                  {% for text in section.content %}
-                    <p>{{ text }}</p>
-                  {% endfor %}
-                {% endif %}
-              </div>
-            {% endfor %}
-          </li>
-        </ul>
-      </div>
-    </div>
+    {%
+      include home/about-me-row.html
+      sections=site.data.home.care-philosophy
+      imgPath="/assets/images/profil.jpeg"
+      imgAlt="Photo de profil de Benjamin Sotty"
+      name="home-care-pilosophy"
+      title="Approche"
+    %}
+
+    {% include home/about-me-row-separator.html %}
+
+    {%
+      include home/about-me-row.html
+      sections=site.data.home.education
+      icon="bi-mortarboard-fill"
+      name="home-education"
+      title="Formation"
+    %}
+
+    {% include home/about-me-row-separator.html %}
+
+    {%
+      include home/about-me-row.html
+      sections=site.data.home.skills
+      icon="bi-heart-pulse-fill"
+      name="home-skills"
+      title="Prise en charge généraliste"
+    %}
   </div>
 </section>

@@ -1,0 +1,17 @@
+<div class="collapsable-text-section">
+  <h2>{{ include.title }}</h2>
+  <ul class="list-group collapsable-list">
+    {% for section in include.sections %}
+      {% assign section-id = include.name | append: "-" | append: section.id %}
+      {% assign expandItem = false %}
+
+      <li class="list-group-item">
+        {% include collapsable-header.html id=section-id title=section.title titleClass="h6" expanded=expand %}
+        <div class="collapse {% if expandItem %} show {% endif %} py-2 my-2 ps-3 my-2 border-start border-2" id="{{ section-id }}">
+          {% for text in section.content %}
+            <p class="text-justify">{{ text }}</p>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+</div>

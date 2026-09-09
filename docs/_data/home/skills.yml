@@ -1,0 +1,42 @@
+- id: every-body
+  title: Tout public
+  content:
+    - Douleurs articulaires (dos, cou, membres)
+    - Douleurs musculaires
+    - Troubles du transit
+    - Maux de tête d'origine cervicale
+    - Difficultés de mastication
+- id: old
+  title: Personne âgée
+  content:
+    - Douleurs articulaires
+    - Difficultés du déglutition
+    - Troubles du transit
+- id: pregnancy
+  title: Femme enceinte et post-partum
+  content:
+    - Accompagnement de la femme enceinte
+    - Préparation à l'accouchement
+    - Suivi post-partum
+    - Accompagnement à l'allaitement
+- id: baby
+  title: Nourrisson
+  content:
+    - Difficulté de succion
+    - Plagiocéphlie
+    - Reflux
+    - Colique
+- id: kids
+  title: Enfant et adolescent
+  content:
+    - Douleurs articulaires et musculaires
+    - Troubles du transit
+    - Scoliose
+    - Tendinopathie de croissance
+- id: atheletes
+  title: Sportif
+  content:
+    - Tendinopathies
+    - Douleurs articulaires et musculaires
+    - Reprise après blessure
+    - Bilan avant une échéance

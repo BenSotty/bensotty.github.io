@@ -1,19 +1,10 @@
-- id: education
-  title: Diplôme d'Ostéopathe (D.O.) en 5 ans
-  content-type: bullet
-  content:
-    - Diplômé de <a href="https://www.osteo-rennes.fr/" target="_blank">l'Institut d'Ostépatie Rennes-Bretagne</a>, en 5 ans
-    - <a href="https://www.osteo-rennes.fr/ecole-osteopathie-ministere-de-la-sante.php" target="_blank">École agréée par le Ministère de la Santé</a>
-    - <a href="https://www.francecompetences.fr/recherche/rncp/41967/" target="_blank">Certification professionnelle de niveau 7, enregistrée au Répertoire National des Certifications Professionnelles (RNCP)</a>
 - id: patient-centered
   title: Vous écouter avant de vous traiter
-  content-type: text
   content:
     - "Chaque patient arrive avec son propre vécu, ses attentes et ses objectifs.
       Je prends donc le temps de vous écouter et de comprendre ce qui vous amène à consulter, afin de construire avec vous une prise en charge adaptée à votre situation."
     - "Votre consentement occupe une place essentielle dans ma pratique : les techniques et les modalités de traitement sont expliquées et discutées avec vous.
       Je privilégie une relation de soin basée sur l’échange, la confiance et la collaboration."
-    - "TODO: add EM topo"
 - id: osteopathy-only
   title: De l'ostéopathie, rien de plus
   content-type: text

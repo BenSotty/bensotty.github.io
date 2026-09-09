@@ -1,12 +1,16 @@
 <a
-  class="collapsable-header collapsed {{ include.class }} text-reset link-underline link-underline-opacity-0 d-flex flex-row justify-content-between align-items-center"
+  class="collapsable-header {% if include.expanded == false %} collapsed {% endif %} {{ include.class }} text-reset link-underline link-underline-opacity-0 d-flex flex-row justify-content-between align-items-center"
   data-bs-toggle="collapse"
   href="#{{ include.id }}"
   role="button"
-  aria-expanded="false"
+  {% if include.expanded %}
+    aria-expanded="true"
+  {% else %}
+    aria-expanded="false"
+  {% endif %}
   aria-controls="{{ include.id }}"
 >
-  <span class="collapsable-header-title">{{ include.title }}</span>
+  <span class="collapsable-header-title {{ include.titleClass }}">{{ include.title }}</span>
   <div class="d-inline-block d-sm-none">
     <i class="bi bi-plus collapsable-header-state collapsed"></i>
     <i class="bi bi-dash collapsable-header-state expanded"></i>

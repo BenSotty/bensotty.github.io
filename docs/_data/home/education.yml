@@ -1,0 +1,15 @@
+- id: DO
+  title: Diplôme d'Ostéopathe (D.O.) en 5 ans
+  content-type: text
+  content:
+    - Je suis diplômé de <a href="https://www.osteo-rennes.fr/" target="_blank">l'Institut d'Ostépatie Rennes-Bretagne</a>, en 5 ans.
+    - Cette formation est agréée par le <a href="https://www.osteo-rennes.fr/ecole-osteopathie-ministere-de-la-sante.php" target="_blank">Ministère de la Santé</a> et ce diplôme donne une <a href="https://www.francecompetences.fr/recherche/rncp/41967/" target="_blank">certification professionnelle de niveau 7 (RNCP)</a>.
+    - Ces études permettent une prise charge tout public quelque soit l'âge.
+    - "Ainsi qu'une prise en charge de patients spécifiques telles que : les nourrissons, les enfants, les femmes enceintes, l'accompagnement du post-partum, les sportifs et les personnes âgées."
+    - Mon mémoire de fin d'étude porte sur l'Entretien Motivationnel en ostéopathie, une méthode à laquelle je me suis formé et qui me permet de dévlopper une relation thérapeutique centrée sur vos attentes et vos besoins.
+- id: EM
+  title: Formation à l'Entretien Motivationnel (AFDEM)
+  content-type: text
+  content:
+    - L'Entretien Motivationnel est une méthode basée sur l'écoute visant à faire émerger les motivations intrinsèques du patient pour prendre en charge leur santé au quotidien.
+    - Cette formation m'a permis de développer une ...

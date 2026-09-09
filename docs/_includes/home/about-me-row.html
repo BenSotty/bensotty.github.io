@@ -1,0 +1,23 @@
+<div class="row py-4 g-3 align-items-center">
+  <div class="col-12 col-md-4 col-xl-3 justify-content-center {% if include.icon %} d-none d-md-flex {% else %} d-flex {% endif %}">
+    {% if include.imgPath %}
+      <img
+        class="round-section-picture rounded-circle border border-3 shadow"
+        src="{{ include.imgPath }}"
+        alt="{{ include.imgAlt }}"
+      />
+    {% else %}
+      <div class="round-section-picture d-flex align-items-center justify-content-center rounded-circle border border-3 shadow p-4 bg-body-secondary">
+        <i class="bi {{ include.icon }} text-primary fs-1"></i>
+      </div>
+    {% endif %}
+  </div>
+  <div class="col-12 col-md-8 col-xl-9">
+    {% include collapsable-text-section.html
+      sections=include.sections
+      name=include.name
+      title=include.title
+      expand-first-item=true
+    %}
+  </div>
+</div>
