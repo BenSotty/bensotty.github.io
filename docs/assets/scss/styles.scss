@@ -65,5 +65,5 @@
 }
 
 @include media-breakpoint-up(lg) {
-  @import "button-lg";
+  // @import "button-lg"; btn-responsive get too large
 }

@@ -1,0 +1,11 @@
+<div class="{{ include.class }}">
+  {% for i in (1..5) %}
+    {% if i <= include.stars  %}
+      {% assign color = "yellow-400" %}
+    {% else %}
+      {% assign color = "gray-300" %}
+    {% endif %}
+    <i class="bi bi-star-fill text-{{ color }}"></i>
+  {% endfor %}
+  <span class="text-small text-gray-600 text-sans-serif">({{ include.stars }}/5)</span>
+</div>

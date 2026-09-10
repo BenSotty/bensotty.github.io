@@ -1,0 +1,33 @@
+<section class="reviews py-5">
+  {% include
+      heading-with-blur-line.html
+      title="Avis de patients"
+      class="mb-4"
+  %}
+  <div class="container-xxl">
+    <div class="row g-4">
+      {% for review-with-comment in site.data.reviews.reviews-with-comment %}
+        <div class="col-12 col-md-4">
+          {% include
+            home/review-with-comment-card.html
+            review=review-with-comment
+          %}
+        </div>
+      {% endfor %}
+      <div class="col-12 col-md-4">
+        {%
+          include home/reviews-without-comment-card.html
+          reviews=site.data.reviews.reviews-without-comment
+        %}
+      </div>
+      <div class="row g-4">
+        <div class="col-12 text-end">
+          {% include write-review-button.html %}
+          <p class="mt-2 text-small text-gray-600">
+            Ces témoignages sont issus de la fiche <a href="{{ site.data.me.Google }}" target="_blank">Google de Benjamin Sotty.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

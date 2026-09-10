@@ -1,0 +1,22 @@
+total: 5
+stars: 5
+write-review-url: https://g.page/r/CWdTPMPEYTSBEAE/review
+reviews-with-comment:
+  - name: Margot D.
+    stars: 5
+    text: Ostéopathe très à l'écoute et efficace. Merci pour ce soin !
+    date: Août 2026
+  - name: Romane C.
+    stars: 5
+    text: Très bon accueil et suivi de Monsieur Sotty. Ostéopathe à l'écoute, bienveillant et doux. Je recommande.
+    date: Juillet 2026
+reviews-without-comment:
+    - name: Gwenn Q.
+      stars: 5
+      date: Août 2026
+    - name: Benjamin E.
+      stars: 5
+      date: Août 2026
+    - name: Odile M.
+      stars: 5
+      date: Juillet 2026

@@ -1,4 +1,4 @@
-$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grays);
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
 
 // Add .text-{color}-{level} classes
 $utilities: map-merge(
@@ -44,7 +44,7 @@ $utilities: map-merge(
       map-get($utilities, "border-color"),
       (
         values: map-merge(
-          map-get(map-get($utilities, "background-color"), "values"),
+          map-get(map-get($utilities, "border-color"), "values"),
           (
             $all-colors
           ),
@@ -52,4 +52,26 @@ $utilities: map-merge(
       ),
     ),
   )
+);
+
+// Same with grays
+$utilities: map-merge(
+  (
+    "bg-grays": (
+      property: background-color,
+      class: bg-gray,
+      values: $grays
+    ),
+    "text-grays": (
+      property: color,
+      class: text-gray,
+      values: $grays
+    ),
+    "border-grays": (
+      property: border-color,
+      class: border-gray,
+      values: $grays
+    )
+  ),
+  $utilities
 );

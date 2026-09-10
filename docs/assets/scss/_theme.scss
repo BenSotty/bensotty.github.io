@@ -31,6 +31,15 @@ ul {
     rgba($white, .001) 50%,
     $white 100%,
   );
+
+  &.gray-200 {
+    background-image: linear-gradient(
+      to right,
+      $gray-200,
+      rgba($gray-200, .001) 50%,
+      $gray-200 100%,
+    );
+  }
 }
 
 .heading-with-blur-line {
@@ -53,5 +62,11 @@ ul {
     right: 0;
     z-index: 0;
     margin: 0;
+  }
+
+  &.gray-200 {
+    h1 {
+      background-color: $gray-200;
+    }
   }
 }
