@@ -1,6 +1,6 @@
 <header class="fixed-top bg-primary">
   <div class="header-wrapper">
-    <nav id="header-navbar" class="navbar navbar-expand-lg" aria-label="Navigation principale">
+    <nav id="header-navbar" class="navbar navbar-expand-md" aria-label="Navigation principale">
       <div class="container-fluid">
         <a class="navbar-brand text-white d-flex align-items-center" href="/">
           {% include logo.html %}
@@ -13,8 +13,8 @@
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav text-white">
+          <div class="offcanvas-body justify-content-end">
+            <ul class="navbar-nav">
               {% for item in page.sections %}
                 {% assign sectionName = item[0] %}
                 {% assign section = item[1] %}
@@ -23,9 +23,9 @@
                   <a id="header-navbar-{{ section.id }}" class="nav-link {% if sectionName == 'booking' %} nav-booking-link {% endif %}" href="#{{ section.id }}">{{ section.title }}</a>
                 </li>
                 {% if forloop.last == false %}
-                  <li class="nav-item py-lg-1 col-12 col-lg-auto">
-                    <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-                    <hr class="d-lg-none my-1 text-gray-600">
+                  <li class="nav-item py-md-1 col-12 col-md-auto">
+                    <div class="vr d-none d-md-flex h-100 mx-0 mx-lg-2 text-white"></div>
+                    <hr class="d-md-none my-1 text-gray-600">
                   </li>
                 {% endif %}
               {% endfor %}
