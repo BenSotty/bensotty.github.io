@@ -16,10 +16,11 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav text-white">
               {% for item in page.sections %}
+                {% assign sectionName = item[0] %}
                 {% assign section = item[1] %}
 
                 <li class="nav-item">
-                  <a id="header-navbar-{{ section.id }}" class="nav-link" href="#{{ section.id }}">{{ section.title }}</a>
+                  <a id="header-navbar-{{ section.id }}" class="nav-link {% if sectionName == 'booking' %} nav-booking-link {% endif %}" href="#{{ section.id }}">{{ section.title }}</a>
                 </li>
                 {% if forloop.last == false %}
                   <li class="nav-item py-lg-1 col-12 col-lg-auto">
