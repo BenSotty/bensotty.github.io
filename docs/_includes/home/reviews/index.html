@@ -1,4 +1,4 @@
-<section class="reviews py-5">
+<section id="{{ page.sections.reviews.id }}" class="reviews py-5">
   {% include
       heading-with-blur-line.html
       title="Avis de patients"
@@ -9,14 +9,14 @@
       {% for review-with-comment in site.data.reviews.reviews-with-comment %}
         <div class="col-12 col-md-4">
           {% include
-            home/review-with-comment-card.html
+            home/reviews/review-with-comment-card.html
             review=review-with-comment
           %}
         </div>
       {% endfor %}
       <div class="col-12 col-md-4">
         {%
-          include home/reviews-without-comment-card.html
+          include home/reviews/reviews-without-comment-card.html
           reviews=site.data.reviews.reviews-without-comment
         %}
       </div>

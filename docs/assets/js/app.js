@@ -9,9 +9,9 @@ import {
   Collapse,
 // Dropdown,
 // Modal,
-  Offcanvas
+  Offcanvas,
 // Popover,
-// ScrollSpy,
+  ScrollSpy
 // Tab,
 // Toast,
 // Tooltip

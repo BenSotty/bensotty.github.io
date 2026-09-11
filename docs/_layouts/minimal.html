@@ -3,8 +3,13 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <main>
-      {{ content }}
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#header-navbar"
+      data-bs-root-margin="-40px 0px -60% 0px"
+      data-bs-smooth-scroll="true"
+      tabindex="0">
+        {{ content }}
     </main>
     {% include footer.html %}
   </body>

@@ -1,0 +1,32 @@
+<section class="home-about-me py-5">
+  <div class="container-lg">
+    {%
+      include home/about-me/row.html
+      sections=site.data.home.care-philosophy
+      imgPath="/assets/images/profil.jpeg"
+      imgAlt="Photo de profil de Benjamin Sotty"
+      id=page.sections.care-philosophy.id
+      title=page.sections.care-philosophy.title
+    %}
+
+    {% include home/about-me/separator.html %}
+
+    {%
+      include home/about-me/row.html
+      sections=site.data.home.education
+      icon="bi-mortarboard-fill"
+      id=page.sections.education.id
+      title=page.sections.education.title
+    %}
+
+    {% include home/about-me/separator.html %}
+
+    {%
+      include home/about-me/row.html
+      sections=site.data.home.skills
+      icon="bi-heart-pulse-fill"
+      id=page.sections.skills.id
+      title=page.sections.skills.title
+    %}
+  </div>
+</section>

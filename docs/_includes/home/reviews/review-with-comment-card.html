@@ -1,7 +1,7 @@
 <div class="card shadow h-100">
   <div class="card-body position-relative">
     <h5 class="card-title">{{ include.review.name }}</h5>
-    {% include home/review-stars.html stars=include.review.stars class="mb-2" %}
+    {% include home/reviews/review-stars.html stars=include.review.stars class="mb-2" %}
     <p class="card-text mb-4">{{ include.review.text }}</p>
     <p class="card-text m-0 text-small text-sans-serif text-gray-600 position-absolute end-0 bottom-0 p-3">{{ include.review.date }}</p>
   </div>

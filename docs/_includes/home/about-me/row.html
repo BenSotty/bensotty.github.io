@@ -1,4 +1,4 @@
-<div class="row g-3 align-items-center">
+<div id="{{ include.id }}" class="row g-3 align-items-center">
   <div class="col-12 col-md-4 col-xl-3 justify-content-center {% if include.icon %} d-none d-md-flex {% else %} d-flex {% endif %}">
     {% if include.imgPath %}
       <img
@@ -15,7 +15,7 @@
   <div class="col-12 col-md-8 col-xl-9">
     {% include collapsable-text-section.html
       sections=include.sections
-      name=include.name
+      name=include.id
       title=include.title
       expand-first-item=true
     %}
