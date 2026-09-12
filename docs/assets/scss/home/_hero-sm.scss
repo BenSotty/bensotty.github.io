@@ -9,9 +9,9 @@
       @include rfs(0.05rem, letter-spacing);
       @include rfs(2.2rem, line-height);
     }
-    
+
     p {
-      @include font-size(1.25rem);
+      @include font-size(1.5rem);
     }
   }
 }

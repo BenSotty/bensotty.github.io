@@ -1,19 +1,32 @@
 <section class="home-hero position-relative">
-    <img
-    src="{{ '/assets/images/hero.png' | relative_url }}"
-    class="home-hero-bg-img w-100"
-    alt="Photo de cabinet d'ostéopathie"
-  />
+  <div class="ratio ratio-4x3 d-sm-none">
+      <img
+      src="{{ '/assets/images/hero/cabinet-saint-gregoire-md-4x3.webp' | relative_url }}"
+      alt="Photo de cabinet d'ostéopathie"
+    />
+  </div>
+  <div class="ratio ratio-16x9 d-none d-sm-block d-lg-none">
+      <img
+      src="{{ '/assets/images/hero/cabinet-saint-gregoire-lg-16x9.webp' | relative_url }}"
+      alt="Photo de cabinet d'ostéopathie"
+    />
+  </div>
+  <div class="ratio ratio-21x9 d-none d-lg-block">
+      <img
+      src="{{ '/assets/images/hero/cabinet-saint-gregoire-xxl-21x9.webp' | relative_url }}"
+      alt="Photo de cabinet d'ostéopathie"
+    />
+  </div>
   <div class="home-hero-overlay bg-white position-absolute top-0 end-0 start-0 bottom-0 z-1"></div>
   <div class="home-hero-text position-absolute top-0 end-0 start-0 bottom-0 z-2">
     <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 gap-1 gap-sm-2 gap-md-3 gap-lg-4">
-      {% include logo.html class="text-center fs-2" %}
-      <p class="m-0 d-none d-md-block">Prise en charge généraliste</p>
-      <p class="m-0">
-        <span class="d-sm-none">À</span><span class="d-none d-sm-inline">Consultation à</span>&nbsp;<strong>domicile</strong>
+      {% include logo.html class="text-center fs-2 mb-1" %}
+      <p class="mb-1 text-bold">Prise en charge généraliste</p>
+      <p class="mb-1  text-bold">
+        <span class="d-md-none">À</span><span class="d-none d-md-inline">Consultation à</span> domicile
       </p>
-      <p class="m-0">
-        <span class="d-sm-none">En cabinet</span><span class="d-none d-sm-inline">Consultation en cabinet</span>&nbsp;à <strong>Rennes, Saint-Grégoire ou Romillé</strong>
+      <p class="mb-1  text-bold">
+        <span class="d-md-none">À</span><span class="d-none d-md-inline">Consultation en cabinet à</span> Rennes, Saint-Grégoire ou Romillé
       </p>
       {% include booking-button.html class="btn-primary btn-responsive" %}
     </div>
