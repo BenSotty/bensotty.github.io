@@ -1,5 +1,5 @@
 <div class="card shadow h-100">
-  <div class="card-img-top">
+  <div class="card-img-top ratio ratio-21x9">
     <img
       src="/assets/images/booking/{{ include.place.img.url }}"
       alt="{{ include.place.img.alt }}"
@@ -16,14 +16,17 @@
       <p class="card-text m-0">Tarif&nbsp;: {{ include.place.price }} €</p>
       <p class="card-text m-0">Règlement&nbsp;: {{ include.place.pay-type }}</p>
       <p class="card-text m-0">Horaires&nbsp;: {{ include.place.schedule }}</p>
-      <p class="card-text m-0">
-        {% if include.place.booking.url %}
-          <a href="{{ include.place.booking.url }}" target="_blank">
-            Reservation&nbsp;: {{ include.place.booking.label }}
-          </a>
-        {% else %}
-          Reservation&nbsp;: {{ include.place.booking.label }}
-        {% endif %}
+      <p class="card-text m-0">Réservation&nbsp;: {{ include.place.booking.label }}</p>
+      <p class="card-text m-0 text-center">
+        <a href="{{ include.place.booking.href }}" target="_blank" class="btn btn-primary stretched-link rounded-pill px-4">
+          {% if include.place.booking.type == "web" %}
+            Réserver en ligne
+          {% else if include.place.booking.type == "tel" %}
+            Appelez le {{ include.place.booking.label }}
+          {% else %}
+            {{ include.place.booking.label }}
+          {% endif %}
+        </a>
       </p>
     </div>
   </div>

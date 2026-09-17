@@ -1,6 +1,6 @@
 - name: Domicile
   img:
-    url: at-home-map.png
+    url: at-home-map-md-21x9.webp
     alt: Carte montrant zone de consultation à domicile dans un rayon de 25km autour de Rennes
   context: 25 km autour de Rennes
   address: à votre domicile
@@ -8,36 +8,40 @@
   pay-type: Espèces, Chèque, Virement
   schedule: du lundi au vendredi de 9h à 19h
   booking:
-      label: 06 51 38 54 58 (SMS)
+    label: 06 51 38 54 58
+    type: tel
+    href: tel:+33651385458
 - name: Saint-Grégoire
   context: Collaboration avec Kévin Castel
   img:
-    url: st-gregoire-salle-de-consultation.png
+    url: cabinet-saint-gregoire-md-21x9.webp
     alt: Carte montrant l'adresse du cabinet de Saint-Grégoire
   address: 1 Rue de l'Église, Saint-Grégoire
   price: 62
   pay-type: Carte Bleue, Espèces, Chèque
   schedule: mardi (14h - 19h), samedi (9h - 16h) et plus certaines semaines
   booking:
+    type: web
+    href: https://www.doctolib.fr/osteopathe/saint-gregoire/kevin-castel
     label: via le Doctolib de Kévin Castel
-    url: https://www.doctolib.fr/osteopathe/saint-gregoire/kevin-castel/booking/motives?specialityId=10&telehealth=false&placeId=practice-207499&source=profile
 - name: Romillé
   context: Collaboration avec Marine Joalland
   img:
-    url: romille-salle-de-consultation.png
-    alt: Carte montrant l'adresse du cabinet de Romillé
+    url: romille-salle-de-consultation-md-21x9.webp
+    alt: Salle de consultation du cabinet de Romillé
   titulaire: Marine Joalland
   address: "1 Rue Jean Guéhenno, Romillé"
   price: 55
   pay-type: Espèces, Chèque, Virement
   schedule: variables selon les semaines
   booking:
-    url: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland/booking/motives?specialityId=10&telehealth=false&placeId=practice-30338&source=profile
+    type: web
+    href: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland
     label: via le Doctolib de Marine Joalland
 - name: Rennes
   img:
-    # url: todo
-    # alt: todo
+    url: cabinet-rennes-md-21x9.webp
+    alt: Salle de consultation du cabinet de Rennes
   titulaire: "Marine Joalland"
   context: Collaboration avec Marine Joalland
   address: "Bat. 3, 2 Rue du Bignon, Rennes"
@@ -45,5 +49,6 @@
   schedule: variables selon les semaines
   pay-type: Espèces, Chèque, Virement
   booking:
-   url: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland/booking/motives?specialityId=10&telehealth=false&placeId=practice-30444&source=profile
-   label: via le Doctolib de Marine Joalland
+    type: web
+    href: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland
+    label: via le Doctolib de Marine Joalland
