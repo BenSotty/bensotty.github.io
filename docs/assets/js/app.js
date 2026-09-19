@@ -19,7 +19,6 @@ import {
 
 import OnDomReady from './on-dom-ready';
 
-
 document.addEventListener("DOMContentLoaded", (event) => {
   new OnDomReady().run();
 });

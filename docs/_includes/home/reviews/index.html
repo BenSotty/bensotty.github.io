@@ -14,14 +14,13 @@
           %}
         </div>
       {% endfor %}
-      <div class="col-12 col-md-4">
-        {%
-          include home/reviews/reviews-without-comment-card.html
-          reviews=site.data.reviews.reviews-without-comment
-        %}
-      </div>
       <div class="row g-4">
         <div class="col-12 text-end">
+          <div class="display-flex flex-row text-gray-600 text-sans-serif">
+            <span>{{ site.data.reviews.stars }},0</span>
+             <span>{% include home/reviews/review-stars.html stars=site.data.reviews.stars class="d-inline-block mb-2" noNumber=true %}</span>
+             <span>({{ site.data.reviews.total }})</span>
+          </div>
           {% include write-review-button.html %}
           <p class="mt-2 text-small text-gray-600">
             Ces témoignages sont issus de la fiche <a href="{{ site.data.me.Google }}" target="_blank">Google de Benjamin Sotty.</a>

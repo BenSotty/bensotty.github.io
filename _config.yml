@@ -1,2 +1,4 @@
 source: ./docs
 keep_files: ['dist']
+url: https://benjamin-sotty.fr
+lang: fr

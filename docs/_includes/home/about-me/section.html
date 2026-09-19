@@ -8,16 +8,27 @@
       />
     {% else %}
       <div class="round-section-picture d-flex align-items-center justify-content-center rounded-circle border border-3 shadow p-4 bg-body-secondary">
-        <i class="bi {{ include.icon }} text-primary fs-1"></i>
+        {% if include.icon %}
+          <i class="bi {{ include.icon }} text-primary fs-1"></i>
+        {% else %}
+          <img
+            class="d-inline-block"
+            src="{{ include.iconPath }}"
+            alt="{{ include.iconAlt }}"
+            width="50px"
+            style="width: 50px; height: auto;"
+          />
+        {% endif %}
       </div>
     {% endif %}
   </div>
   <div class="col-12 col-md-8 col-xl-9">
-    {% include collapsable-text-section.html
-      sections=include.sections
-      name=include.id
-      title=include.title
-      expand-first-item=true
-    %}
+    {% if include.text_type == "expandable" %}
+      <div class="expandable-text-list">
+        {{ include.text | markdownify }}
+      </div>
+    {% else %}
+      {{ include.text | markdownify }}
+    {% endif %}
   </div>
 </div>

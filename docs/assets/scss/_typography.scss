@@ -171,29 +171,11 @@ h1 {
   @include rfs(-0.028rem, letter-spacing);
 }
 
-p {
-  font-family: $font-family-serif;
+h2 {
+  font-weight: 700;
+  @include font-size(1.5rem);
 }
 
-#page-content {
-  // Just an idea for pages background taken from bootstrap site
-  // background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), .01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), .5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), .5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), .5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), .5), transparent 50%);
-
-  p {
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-
-  h2 {
-    font-family: $font-family-sans-serif;
-    font-weight: 400;
-    font-size: 1.375rem;
-    color: #6b6b6b;
-  }
-
-  strong {
-    font-family: $font-family-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
+p {
+  font-family: $font-family-serif;
 }

@@ -1,7 +1,11 @@
-total: 5
+total: 6
 stars: 5
 write-review-url: https://g.page/r/CWdTPMPEYTSBEAE/review
 reviews-with-comment:
+  - name: Pierrick R.
+    stars: 5
+    text: Vraiment très bien, je conseille.
+    date: Septembre 2026
   - name: Margot D.
     stars: 5
     text: Ostéopathe très à l'écoute et efficace. Merci pour ce soin !

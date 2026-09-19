@@ -1,6 +1,29 @@
+{% assign title = page.title | default: 'Ostéopathe à domicile - Benjamin Sotty D.O.' %}
+{% assign description = page.description | default: "Benjamin Sotty, ostéopathe à domicile autour de Rennes. Consultations pour douleurs lombaires, cervicales, douleurs articulaires, troubles digestifs, suites d'entorses et accompagnement personnes âgées, femmes enceintes et sportifs." %}
+{% assign profilImgPath = '/assets/images/profil-sm-1x1.webp' | relative_url %}
+{% assign relativeUrl = page.url | replace: 'index.html', '' %}
+{% assign url = [site.url,  relativeUrl] | join: ""  %}
+
 <head>
-  <meta name="robots" content="noindex, nofollow">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="canonical" href="{{ url }}" />
+  <link rel="icon" type="png" href="{{ '/assets/images/icons/care-primary.png' | relative_url }}" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:url"content="{{ url }}" />
+  <meta property="og:image" content="{{ profilImgPath }}" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="{{ profilImgPath }}" />
+
   <script defer src="{{ '/dist/app-min.js' | relative_url }}"></script>
 </head>

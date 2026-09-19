@@ -1,32 +1,44 @@
 <section class="home-about-me py-5">
   <div class="container-lg">
+    {% capture care_philosophy %}
+      {% include home/about-me/texts/care-philosophy.md %}
+    {% endcapture %}
+
     {%
-      include home/about-me/row.html
-      sections=site.data.home.care-philosophy
+      include home/about-me/section.html
       imgPath="/assets/images/profil-sm-1x1.webp"
       imgAlt="Photo de profil de Benjamin Sotty"
       id=page.sections.care-philosophy.id
-      title=page.sections.care-philosophy.title
+      text=care_philosophy
     %}
 
     {% include home/about-me/separator.html %}
 
+    {% capture education %}
+      {% include home/about-me/texts/education.md %}
+    {% endcapture %}
+
     {%
-      include home/about-me/row.html
-      sections=site.data.home.education
+      include home/about-me/section.html
       icon="bi-mortarboard-fill"
       id=page.sections.education.id
-      title=page.sections.education.title
+      text=education
+      text_type="expandable"
     %}
 
     {% include home/about-me/separator.html %}
 
+    {% capture skills %}
+      {% include home/about-me/texts/skills.md %}
+    {% endcapture %}
+
     {%
-      include home/about-me/row.html
-      sections=site.data.home.skills
-      icon="bi-heart-pulse-fill"
+      include home/about-me/section.html
+      iconPath="/assets/images/icons/care-primary.png"
+      iconAlt="Soins ostéopathiques"
       id=page.sections.skills.id
-      title=page.sections.skills.title
+      text=skills
+      text_type="expandable"
     %}
   </div>
 </section>
