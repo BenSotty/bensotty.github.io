@@ -4,6 +4,7 @@ import {initPageExpandableTextLists } from './components/expandable-text-list';
 
 export default class OnDomReady {
   run () {
+    document.querySelector("body").classList.remove("js-not-loaded");
     initPageBookingBtns();
     initPageCollapseableLists();
     initPageExpandableTextLists();

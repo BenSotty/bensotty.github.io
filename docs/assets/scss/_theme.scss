@@ -3,6 +3,10 @@ body {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
   color: $dark;
+
+  &.no-js {
+    visibility: hidden;
+  }
 }
 
 p:last-child {
