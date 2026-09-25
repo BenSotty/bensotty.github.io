@@ -1,9 +1,14 @@
 <section id="{{ page.sections.booking.id }}" class="booking py-5 bg-gray-200">
-  {%
-    include heading-with-blur-line.html
-    title=page.sections.booking.title
-    class="mb-4" bg-color="gray-200" %}
+
   <div class="container-xxl">
+    <div class="row">
+      <div class="col">
+        {%
+          include heading-with-blur-line.html
+          title=page.sections.booking.title
+          class="mb-4" bg-color="gray-200" %}
+      </div>
+    </div>
     <div class="row g-4">
       {% for working-place in site.data.booking %}
         <div class="col-12 col-md-6 col-xxl-3">
