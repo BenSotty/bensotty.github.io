@@ -10,6 +10,13 @@
 
   p {
     &::after {
+      display: none;
+      background-color: $blue-100;
+      font-family: $font-family-sans-serif;
+      font-size: $font-size-sm;
+      border-radius: var(--bs-border-radius-pill);
+      padding: 0.1rem 0.5rem;
+      margin-left: 0.5rem;
       content: "";
     }
 
@@ -21,15 +28,9 @@
   &.is-open {
     max-height: var(--open-height);
 
-    p:first-child::after {
-      content: ".";
-    }
-
     p:last-child::after {
-      color: $gray-600;
-      font-family: $font-family-sans-serif;
-      font-size: $font-size-sm;
-      content: "\00A0moins";
+      display: inline;
+      content: "Réduire";
     }
   }
 
@@ -37,10 +38,8 @@
     max-height: var(--closed-height);
 
     p:first-child::after {
-      color: $gray-600;
-      font-family: $font-family-sans-serif;
-      font-size: $font-size-sm;
-      content: "...\00A0plus";
+      display: inline;
+      content: "Lire\00A0plus";
     }
   }
 }
