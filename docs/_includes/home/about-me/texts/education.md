@@ -3,9 +3,9 @@
 
 ## Diplôme d'Ostéopathe
 
-Je suis diplômé de [l'Institut d'Ostéopathie Rennes-Bretagne](https://www.osteo-rennes.fr/), en 5 ans
+Je suis diplômé de l'Institut d'Ostéopathie Rennes-Bretagne
 
-Cette formation est agréée par le [Ministère de la Santé](https://www.osteo-rennes.fr/ecole-osteopathie-ministere-de-la-sante.php) et donne aussi une [certification professionnelle de niveau 7 (RNCP)](https://www.francecompetences.fr/recherche/rncp/41967/).
+[Cette formation](https://www.osteo-rennes.fr/formation-initiale-osteopathe.php) en 5 ans est agréée par le [Ministère de la Santé](https://www.osteo-rennes.fr/ecole-osteopathie-ministere-de-la-sante.php). Elle donne aussi une [certification professionnelle de niveau 7 (RNCP)](https://www.francecompetences.fr/recherche/rncp/41967/).
 
 Elle comprend un enseignement approfondi en anatomie, physiologie, sémiologie et bien sûr en ostéopathie. Elle prépare à la prise en charge de patients de tous âges et de situations variées. Au cours de ma formation, j'ai aussi été formé à l'accompagnement de public spécifique telles que : les nourrissons, les enfants, les femmes enceintes, l'accompagnement du post-partum, les sportifs et les personnes âgées.
 
@@ -13,4 +13,4 @@ Elle comprend un enseignement approfondi en anatomie, physiologie, sémiologie e
 
 L'Entretien Motivationnel est une méthode de communication fondée sur l'écoute et le dialogue
 
-Elle vise à aider le patient à identifier lui-même ce qui compte pour lui et à trouver ses propres leviers de changement. Cette formation m'a permis de développer une posture davantage centrée sur le patient, en accordant une place importante à son expérience, ses préférences et ses objectifs. Concrètement, elle m'aide à mieux vous accompagner dans les changements que vous souhaitez mettre en place, qu'il s'agisse de votre activité physique, de vos habitudes de vie ou de la gestion de vos symptômes au quotidien.
+Elle vise à aider le patient à identifier lui-même ses propres leviers de changement pour prendre en charge sa santé au quotidien. Cette formation m'a permis de développer une posture davantage centrée sur le patient, en accordant une place importante à son expérience, ses préférences et ses objectifs. Ces compétences m'aident à mieux vous accompagner dans les changements que vous souhaitez mettre en place, qu'il s'agisse de votre activité physique, de vos habitudes de vie ou de la gestion de vos symptômes au quotidien.

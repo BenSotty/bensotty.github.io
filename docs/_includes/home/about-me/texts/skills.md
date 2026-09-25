@@ -11,19 +11,19 @@ Les consultations peuvent également concerner certaines situations telles que l
 
 ## Personne âgée
 
-L’accompagnement vise à préserver la mobilité et le confort au quotidien
+L’accompagnement vise à améliorer votre le confort et préserver votre autonomie
 
-J’accompagne les personnes âgées en tenant compte des changements liés au vieillissement, des antécédents, des traitements et de la mobilité de chacun. Les motifs de consultation peuvent notamment concerner des douleurs articulaires ou certaines gênes affectant le confort au quotidien.
+J’accompagne les personnes âgées en tenant compte des changements liés au vieillissement, des antécédents de santé, des traitements en cours et de la mobilité de chacun. Les motifs de consultation peuvent notamment concerner des douleurs articulaires, musculaires ou certaines gênes comme des difficultés de déglutition ou trouble du transit pouvant affecter l'autonomie.
 
-La prise en charge est adaptée à chaque personne, à son histoire, à ses capacités et à ses éventuels problèmes de santé. Elle vise notamment à préserver la mobilité et l’autonomie, dans le respect des limites propres à chacun.
+Lors de ma formation, j'ai notamment eu l'occasion d'exercer au sein de l'[Unité de Soins de Longue Durée de la Tauvrais](https://www.chu-rennes.fr/patients-visiteurs/accompagnement-et-soins-des-personnes-agees/usld-la-tauvrais-440.html). Cette expérience m'a permis de développer un toucher et une écoute adapté à des patients âgées atteints de troubles sévères.
 
 ## Femme enceinte et post-partum
 
-La prise en charge s’adapte aux transformations du corps pendant et après la grossesse
+La prise en charge s’adapte aux transformations de votre corps pendant et après la grossesse
 
-Je reçois les femmes enceintes confrontées à des douleurs ou des inconforts liés aux transformations physiques de la grossesse, notamment au niveau du dos, du bassin ou des membres. Cette prise en charge intervient en complément du suivi médical et obstétrical.
+Je reçois les femmes enceintes confrontées à des douleurs liées aux transformations physiques de la grossesse, notamment au niveau du bassin et des douleurs type sciatique. Il est important de en charge ces douleurs car elles réduisent votre mobilité et peuvent affecter le bon déroulement de la grossesse. Je propose aussi des consultations de préparation à l'accouchement qui ont pour objectif maximiser votre capacité de mouvement au niveau des hanches, du bassin et du dos.
 
-L’accompagnement peut également se poursuivre après l’accouchement pour prendre en compte les changements liés au post-partum. Il peut notamment concerner la récupération après la grossesse et l’accouchement, les contraintes liées au portage ou à l’allaitement, ainsi que les douleurs ou gênes ressenties au quotidien.
+L’accompagnement peut également se poursuivre après l’accouchement pour prendre en compte les changements liés au post-partum. Il peut notamment concerner les difficultés rencontrées lors de la mise en place de l’allaitement ou les douleurs liées au portage.
 
 ## Nourrisson
 
@@ -31,20 +31,14 @@ Les premiers mois de vie nécessitent une approche particulièrement adaptée au
 
 Une consultation peut être envisagée lorsque certaines difficultés sont présentes, notamment en cas de difficultés de succion, de troubles digestifs tels que les régurgitations ou les coliques, ou encore de déformation positionnelle du crâne comme la plagiocéphalie.
 
-La consultation commence par un échange avec les parents et un examen adapté à l’âge de l’enfant. Lorsque cela est indiqué, l’accompagnement ostéopathique s’intègre dans une prise en charge pluridisciplinaire, en lien avec le pédiatre, le médecin ou les autres professionnels qui suivent le nourrisson.
-
 ## Enfant et adolescent
 
-La prise en charge tient compte des changements du corps liés à la croissance et aux activités de l’enfant
+La prise en charge tient compte des changements du corps liés à la croissance et aux activités de votre enfant
 
-J’accompagne les enfants et les adolescents pour différents motifs, notamment les douleurs musculosquelettiques pouvant apparaître au cours de la croissance. La pratique sportive, les changements liés au développement ou certaines contraintes du quotidien peuvent également être pris en compte.
-
-Les consultations peuvent notamment concerner certaines douleurs articulaires ou musculaires, les troubles du transit ou encore les tendinopathies liées à la croissance. La prise en charge est toujours adaptée à l’âge et au développement de l’enfant et ne se substitue pas au suivi médical nécessaire.
+J’accompagne les enfants et les adolescents pour différents motifs, notamment les douleurs musculo-squelettiques, les troubles du transit ou les tendinopathies  pouvant apparaître au cours de la croissance. J'interviens aussi en parallèle d'un suivi orthodontique. En effet, le port d'un appareil dentaire peut créer des contraintes maxillo-faciales importantes pouvant donner des douleurs cervicale importante qui peuvent être soulagée par un traitement ostéopathique.
 
 ## Sportif
 
 L’accompagnement s’adapte aux contraintes de votre activité et aux différentes étapes de votre pratique sportive
 
-J’accompagne les sportifs confrontés à des douleurs articulaires ou musculaires, des tendinopathies ou des gênes apparaissant progressivement au cours de leur pratique. La prise en charge s’inscrit en complément des autres professionnels impliqués dans votre parcours de soins.
-
-Je peux également intervenir lors d’une reprise après une blessure, pour accompagner le retour progressif aux activités sportives, ou dans le cadre d’un bilan avant une échéance sportive. L’accompagnement tient compte des contraintes propres à votre activité et de vos objectifs.
+J’accompagne les sportifs confrontés à des douleurs articulaires ou musculaires, des tendinopathies ou des gênes apparaissant progressivement au cours de leur pratique. Je peux également intervenir lors d’une reprise après une blessure, pour accompagner le retour progressif aux activités sportives, ou dans le cadre d’un bilan avant une échéance sportive. L’accompagnement tient compte des contraintes propres à votre activité et de vos objectifs.
