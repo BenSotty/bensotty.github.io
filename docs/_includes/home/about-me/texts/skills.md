@@ -15,7 +15,7 @@ L’accompagnement vise à améliorer votre le confort et préserver votre auton
 
 J’accompagne les personnes âgées en tenant compte des changements liés au vieillissement, des antécédents de santé, des traitements en cours et de la mobilité de chacun. Les motifs de consultation peuvent notamment concerner des douleurs articulaires, musculaires ou certaines gênes comme des difficultés de déglutition ou trouble du transit pouvant affecter l'autonomie.
 
-Lors de ma formation, j'ai notamment eu l'occasion d'exercer au sein de l'[Unité de Soins de Longue Durée de la Tauvrais](https://www.chu-rennes.fr/patients-visiteurs/accompagnement-et-soins-des-personnes-agees/usld-la-tauvrais-440.html). Cette expérience m'a permis de développer un toucher et une écoute adapté à des patients âgées atteints de troubles sévères.
+Lors de ma formation, j'ai notamment eu l'occasion d'exercer au sein de l'[Unité de Soins de Longue Durée de la Tauvrais](https://www.chu-rennes.fr/patients-visiteurs/accompagnement-et-soins-des-personnes-agees/usld-la-tauvrais-440.html){:target="_blank"}. Cette expérience m'a permis de développer un toucher et une écoute adapté à des patients âgées atteints de troubles sévères.
 
 ## Femme enceinte et post-partum
 
