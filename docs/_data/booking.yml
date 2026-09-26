@@ -23,7 +23,7 @@
   booking:
     type: web
     href: https://www.doctolib.fr/osteopathe/saint-gregoire/kevin-castel
-    label: via le Doctolib de Kévin Castel
+    label: Doctolib (cabinet de Kévin Castel)
 - name: Romillé
   context: Collaboration avec Marine Joalland
   img:
@@ -37,7 +37,7 @@
   booking:
     type: web
     href: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland
-    label: via le Doctolib de Marine Joalland
+    label: Doctolib (cabinet de Marine Joalland)
 - name: Rennes
   img:
     url: cabinet-rennes-md-21x9.webp
@@ -51,4 +51,4 @@
   booking:
     type: web
     href: https://www.doctolib.fr/osteopathe/vern-sur-seiche/marine-joalland
-    label: via le Doctolib de Marine Joalland
+    label: Doctolib (cabinet de Marine Joalland)

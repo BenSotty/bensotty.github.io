@@ -1,6 +1,7 @@
 {% assign title = page.title | default: 'Ostéopathe à domicile - Benjamin Sotty D.O.' %}
 {% assign siteName = 'Benjamin Sotty, ostéopathe D.O.' %}
-{% assign description = page.description | default: "Benjamin Sotty, ostéopathe à domicile autour de Rennes. Consultations pour douleurs lombaires, cervicales, douleurs articulaires, troubles digestifs, suites d'entorses et accompagnement personnes âgées, femmes enceintes et sportifs." %}
+{% assign description = page.description | default: "Benjamin Sotty, ostéopathe à domicile et en cabinet dans la région rennaise. Consultations pour douleurs lombaires, cervicales, articulaires, troubles digestifs, suites d'entorses et accompagnement de personnes âgées, femmes enceintes, nourrissons, enfants et sportifs." %}
+{% assign summary = page.summary | default: 'Benjamin Sotty, ostéopathe à domicile et en cabinet dans la région rennaise.' %}
 {% assign ogImgPath = '/assets/images/benjamin-sotty-activity-summary.png' | absolute_url %}
 {% assign relativeUrl = page.url | replace: 'index.html', '' %}
 {% assign url = [site.url,  relativeUrl] | join: ""  %}
@@ -16,7 +17,7 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:description" content="{{ summary }}" />
   <meta property="og:url"content="{{ url }}" />
   <meta property="og:image" content="{{ ogImgPath }}" />
   <meta property="og:image:width" content="1200" />
@@ -27,7 +28,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:description" content="{{ summary }}" />
   <meta name="twitter:image" content="{{ ogImgPath }}" />
 
   <link rel="stylesheet" href="{{ '/dist/main.css' | relative_url }}" />
