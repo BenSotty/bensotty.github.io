@@ -11,7 +11,7 @@ Les consultations peuvent également concerner certaines situations telles que l
 
 ## Personne âgée
 
-L’accompagnement vise à améliorer votre le confort et préserver votre autonomie.
+L’accompagnement vise à améliorer votre confort et préserver votre autonomie.
 
 J’accompagne les personnes âgées en tenant compte des changements liés au vieillissement, des antécédents de santé, des traitements en cours et de la mobilité de chacun. Les motifs de consultation peuvent notamment concerner des douleurs articulaires, musculaires ou certaines gênes comme des difficultés de déglutition ou trouble du transit pouvant affecter l'autonomie.
 
