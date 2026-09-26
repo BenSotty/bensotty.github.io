@@ -4,7 +4,7 @@ export const NAV_BAR_MENU_ID = 'offcanvasNavbar';
 
 export class NavBarMenu {
   constructor(id) {
-    this.delayMs = 700;
+    this.delayMs = 900;
     this.menuElt = document.getElementById(id);
     this.menu = Offcanvas.getOrCreateInstance(this.menuElt);
     this.links = [...this.menuElt.querySelectorAll('.nav-link')];
