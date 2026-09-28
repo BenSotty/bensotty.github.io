@@ -32,10 +32,13 @@
       {% include home/about-me/texts/skills.md %}
     {% endcapture %}
 
+    {% capture skillsIcon %}
+      {% include svg-icons/healthcare.svg class="text-primary" size="3.5rem" %}
+    {% endcapture %}
+
     {%
       include home/about-me/section.html
-      iconPath="/assets/images/icons/care-primary.png"
-      iconAlt="Soins ostéopathiques"
+      iconHtml=skillsIcon
       id=page.sections.skills.id
       text=skills
       text_type="expandable"

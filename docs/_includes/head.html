@@ -5,6 +5,7 @@
 {% assign ogImgPath = '/assets/images/benjamin-sotty-activity-summary.png' | absolute_url %}
 {% assign relativeUrl = page.url | replace: 'index.html', '' %}
 {% assign url = [site.url,  relativeUrl] | join: ""  %}
+{% assign favicon = '/assets/images/icons/favicon.png' | absolute_url %}
 
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +14,7 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}" />
   <link rel="canonical" href="{{ url }}" />
-  <link rel="icon" type="png" href="{{ '/assets/images/icons/care-primary.png' | absolute_url }}" />
+  <link rel="icon" type="png" href="{{ favicon }}" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ title }}" />

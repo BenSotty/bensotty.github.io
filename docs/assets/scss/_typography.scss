@@ -164,3 +164,13 @@ h2 {
 p + h2 {
   @include rfs(1.5rem, margin-top);
 }
+
+a.link-white {
+  color: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+  }
+}

@@ -7,9 +7,11 @@
         alt="{{ include.imgAlt }}"
       />
     {% else %}
-      <div class="round-section-picture d-flex align-items-center justify-content-center rounded-circle border border-3 shadow p-4 bg-body-secondary">
+      <div class="round-section-picture d-flex align-items-center border-solid border-3 border-primary-400 justify-content-center rounded-circle shadow p-4">
         {% if include.icon %}
           <i class="bi {{ include.icon }} text-primary fs-1"></i>
+        {% else if include.iconHtml %}
+            {{ include.iconHtml }}
         {% else %}
           <img
             class="d-inline-block"

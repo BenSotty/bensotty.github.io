@@ -75,3 +75,37 @@ $utilities: map-merge(
   ),
   $utilities
 );
+
+$primaries: (
+  "50": #F0F8F6,
+  "100": #D9EEEA,
+  "200": #B5DED7,
+  "300": #8CCBC1,
+  "400": #61B5A8,
+  "500": #3A9D8F,
+  "600": #31897D,
+  "700": #287268,
+  "800": #205B53,
+  "900": #17443E
+);
+
+$utilities: map-merge(
+  (
+    "bg-primaries": (
+      property: background-color,
+      class: bg-primary,
+      values: $primaries
+    ),
+    "text-primaries": (
+      property: color,
+      class: text-primary,
+      values: $primaries
+    ),
+    "border-primaries": (
+      property: border-color,
+      class: border-primary,
+      values: $primaries
+    )
+  ),
+  $utilities
+);

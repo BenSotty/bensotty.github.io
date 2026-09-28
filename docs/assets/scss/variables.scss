@@ -5,12 +5,19 @@ $font-size-base: 1.06rem;
 $headings-font-weight: 700;
 $h1-font-size: $font-size-base * 2.5;
 
-
 // Colors
-//$primary: #12304A;
-//$primary: #0a58ca; // $blue-600;
-//$primary:#084298; // $blue-700;
-$primary: #052c65; // $blue-800;
+$primary: #3A9D8F;
+$primary-50:  #F0F8F6;
+$primary-100: #D9EEEA;
+$primary-200: #B5DED7;
+$primary-300: #8CCBC1;
+$primary-400: #61B5A8;
+$primary-500: #3A9D8F;
+$primary-600: #31897D;
+$primary-700: #287268;
+$primary-800: #205B53;
+$primary-900: #17443E;
+
 $white: #FAF9F6;
 $dark: #242424;
 $text-light: #6b6b6b;

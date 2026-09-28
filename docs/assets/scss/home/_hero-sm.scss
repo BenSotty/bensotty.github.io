@@ -14,8 +14,7 @@
     }
 
     p {
-      @include font-size(1.5rem);
-      font-weight: 500;
+      @include font-size(1.375rem);
     }
   }
 }

@@ -1,4 +1,24 @@
-.btn-responsive {
-  // .btn-sm
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+.btn {
+  font-weight: 500;
+
+  &.btn-responsive {
+    // .btn-sm
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+  }
+
+  &.btn-primary {
+    color: $white;
+  }
+
+  &.btn-white {
+    background-color: $white;
+    color: $primary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $white;
+      color: $primary;
+    }
+  }
 }
