@@ -10,16 +10,18 @@
   .home-hero-text {
     .logo-name {
       font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 600;
     }
 
     .logo-function {
       font-size: 1.5rem;
-      letter-spacing: 0.05rem,;
-      line-height: 1.6rem;
+      line-height: 2rem;
     }
 
     p {
       @include font-size(1.125rem);
+      font-weight: 600;
     }
   }
 }

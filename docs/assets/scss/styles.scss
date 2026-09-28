@@ -65,7 +65,3 @@
   @import "button-sm";
   @import "home/hero-sm";
 }
-
-@include media-breakpoint-up(lg) {
-  // @import "button-lg"; btn-responsive get too large
-}

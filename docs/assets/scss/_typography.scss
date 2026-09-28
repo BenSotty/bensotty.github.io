@@ -1,159 +1,140 @@
-@font-face {
-  font-family: 'sohne';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/sohne-latin-400-normal.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
+$fonts: (
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-extralight.woff2",
+        200,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-thinitalic.woff2",
+        100,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-extralightitalic.woff2",
+        200,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-bolditalic.woff2",
+        700,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-light.woff2",
+        300,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-medium.woff2",
+        500,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-semibolditalic.woff2",
+        600,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-extrabolditalic.woff2",
+        800,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-extrabold.woff2",
+        800,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-blackitalic.woff2",
+        900,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-regular.woff2",
+        400,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-lightitalic.woff2",
+        300,
+        italic
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-bold.woff2",
+        700,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-black.woff2",
+        900,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-thin.woff2",
+        100,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-semibold.woff2",
+        600,
+        normal
+    ),
+    (
+        "Poppins",
+        "../fonts/Poppins/poppins-italic.woff2",
+        400,
+        italic
+    ),
+    (
+        "Poppins-Medium",
+        "../fonts/Poppins/poppins-mediumitalic.woff2",
+        500,
+        italic
+    ),
+);
+
+@each $font in $fonts {
+  @font-face {
+    font-family: nth($font, 1);
+    src: url(nth($font, 2)) format("woff2");
+    font-weight: nth($font, 3);
+    font-style: nth($font, 4);
+    font-display: swap;
+  }
 }
 
-@font-face {
-  font-family: 'sohne';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/sohne-rest-400-normal.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
+$font-weights: (
+  ("thin", 100),
+  ("extra-light", 200),
+  ("weight-light", 300),
+  ("regular", 400),
+  ("medium", 500),
+  ("semi-bold", 600),
+  ("bold", 700),
+  ("extra-bold", 800),
+  ("black", 900)
+);
 
-@font-face {
-  font-family: 'sohne';
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/sohne-latin-400-italic.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-@font-face {
-  font-family: 'sohne';
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/sohne-rest-400-italic.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-@font-face {
-  font-family: 'sohne';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/sohne-latin-700-normal.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-@font-face {
-  font-family: 'sohne';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/sohne-rest-700-normal.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'sohne';
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/sohne-latin-700-italic.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-/* rest */
-@font-face {
-  font-family: 'sohne';
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/sohne-rest-700-italic.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-latin-400-normal.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-rest-400-normal.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-latin-400-italic.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-rest-400-italic.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-latin-700-normal.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-rest-700-normal.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-latin-700-italic.woff') format('woff');
-  unicode-range: U+0-7F,U+A0,U+B7,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
-}
-
-@font-face {
-  font-family: 'source-serif-pro';
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-  src: url('../fonts/source-serif-pro-rest-700-italic.woff') format('woff');
-  unicode-range: U+80-9F,U+A1-B6,U+B8-2009,U+200B-2013,U+2015-2017,U+201A-201B,U+201E-2021,U+2023-2025,U+2027-10FFFF;
-}
-
-.text-serif {
-  font-family: $font-family-serif;
-}
-
-.text-sans-serif {
-  font-family: $font-family-sans-serif;
-}
-
-.text-bold {
-  font-weight: $font-weight-bold;
+@each $font-weight in $font-weights {
+  .text-#{nth($font-weight, 1)} {
+    font-weight: nth($font-weight, 2);
+  }
 }
 
 .text-small {
@@ -164,18 +145,18 @@
   text-align: justify;
 }
 
+.text-condensed {
+  letter-spacing: -0.025rem;
+}
+
 h1 {
   font-weight: 700;
-  @include font-size(2.625rem);
-  @include rfs(3rem, line-height);
-  @include rfs(-0.028rem, letter-spacing);
+  @include font-size(2.375rem);
 }
 
 h2 {
   font-weight: 700;
   @include font-size(1.5rem);
-}
-
-p {
-  font-family: $font-family-serif;
+  @include rfs(-0.03125rem, letter-spacing);
+  margin-bottom: 0.375rem;
 }
