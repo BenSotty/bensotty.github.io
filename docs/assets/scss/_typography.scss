@@ -160,3 +160,7 @@ h2 {
   @include rfs(-0.03125rem, letter-spacing);
   margin-bottom: 0.375rem;
 }
+
+p + h2 {
+  @include rfs(1.5rem, margin-top);
+}
