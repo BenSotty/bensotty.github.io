@@ -8,9 +8,9 @@
   pay-type: Espèces, Chèque, Virement
   schedule: du lundi au vendredi de 9h à 19h
   booking:
-    label: 06 51 38 54 58
+    label: 06 10 97 52 03
     type: tel
-    href: tel:+33651385458
+    href: tel:+33610975203
 - name: Saint-Grégoire
   context: Collaboration avec Kévin Castel
   img:
