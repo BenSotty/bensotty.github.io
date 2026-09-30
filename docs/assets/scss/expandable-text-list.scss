@@ -1,17 +1,13 @@
 .expandable-text {
-  overflow: hidden;
   cursor: pointer;
-  max-height: var(--closed-height);
-  transition: max-height 400ms ease;
-
   border-left: solid 1px $gray-300;
   padding-left: 0.5rem;
   @include rfs(1.5rem, margin-bottom);
 
-  p {
-    &::after {
+  .expandable-header,
+  .expandable-body {
+    p:last-child::after {
       display: inline;
-      opacity: 0;
       transition: opacity 400ms ease;
       background-color: $primary-100;
       font-family: $font-family-sans-serif;
@@ -19,34 +15,37 @@
       border-radius: var(--bs-border-radius-pill);
       padding: 0.1rem 0.5rem;
       margin-left: 0.5rem;
-    }
-
-    &:last-child::after {
-      content: "Réduire";
-    }
-
-    &:first-child::after {
-      content: "Lire\00A0plus";
-    }
-
-    &:last-child {
       margin-bottom: 0;
     }
   }
 
-  &.is-open {
-    max-height: var(--open-height);
+  .expandable-header p:last-child::after {
+    opacity: 1;
+    content: "Lire\00A0plus";
+  }
 
-    p:last-child::after {
-      opacity: 1;
+  .expandable-body {
+    transition: max-height 400ms ease;
+    max-height: 0;
+    overflow: hidden;
+
+     p:last-child::after {
+     opacity: 0;
+      content: "Réduire";
     }
   }
 
-  &.is-closed {
-    max-height: var(--closed-height);
+  &.is-open {
+    .expandable-body {
+      max-height: var(--open-height);
 
-    p:first-child::after {
-      opacity: 1;
+      p:last-child::after {
+        opacity: 1;
+      }
+    }
+
+    .expandable-header p:last-child::after {
+      opacity: 0;
     }
   }
 }

@@ -1,85 +1,64 @@
+function updateHeightsAndRestoreState(expandable, isOpen) {
+  const body = expandable.querySelector('.expandable-body');
+  const openHeight = body.scrollHeight;
+
+  body.style.setProperty('--open-height', `${openHeight}px`);
+
+  if (!isOpen) {
+    expandable.classList.remove('is-open');
+  }
+}
+
 function updateAllExpandableTextHeights() {
-    document.querySelectorAll('.expandable-text').forEach((expandable) => {
-        const firstParagraph = expandable.querySelector('p:first-child');
+  document.querySelectorAll('.expandable-text').forEach((expandable) => {
+    const isOpen = expandable.classList.contains('is-open');
 
-        if (!firstParagraph) {
-            return;
-        }
-
-        const isOpen = expandable.classList.contains('is-open');
-
-        // Désactive temporairement la contrainte de hauteur
-        expandable.style.maxHeight = 'none';
-
-        // Mesure de l'état fermé
-        expandable.classList.remove('is-open');
-        expandable.classList.add('is-closed');
-
-        const closedHeight = firstParagraph.offsetHeight;
-
-        // Mesure de l'état ouvert
-        expandable.classList.remove('is-closed');
-        expandable.classList.add('is-open');
-
-        const openHeight = expandable.scrollHeight;
-
-        // Restaure l'état initial
-        expandable.classList.toggle('is-open', isOpen);
-        expandable.classList.toggle('is-closed', !isOpen);
-
-        // Restaure la contrainte CSS
-        expandable.style.removeProperty('max-height');
-
-        expandable.style.setProperty(
-            '--closed-height',
-            `${closedHeight}px`
-        );
-
-        expandable.style.setProperty(
-            '--open-height',
-            `${openHeight}px`
-        );
-    });
+    if (!isOpen) {
+      expandable.classList.add('is-open');
+    }
+    updateHeightsAndRestoreState(expandable, isOpen);
+  });
 };
 
 export function initPageExpandableTextLists() {
   document.querySelectorAll('.expandable-text-list').forEach((list) => {
-    const headings = list.querySelectorAll('h2');
-
-    headings.forEach((heading) => {
+    list.querySelectorAll('h2').forEach((heading) => {
       const paragraphs = [];
 
       let element = heading.nextElementSibling;
 
       while (element && element.tagName !== 'H2') {
-        if (element.tagName === 'P') {
-          paragraphs.push(element);
-        }
-
+        paragraphs.push(element);
         element = element.nextElementSibling;
       }
 
-      if (paragraphs.length === 0) {
+      if (paragraphs.length < 2) {
         return;
       }
 
       const expandable = document.createElement('div');
-      expandable.classList.add(
-        'expandable-text',
-        'is-closed'
-      );
-
+      expandable.classList.add('expandable-text');
+      expandable.appendChild(heading);
       paragraphs.forEach((paragraph) => {
         expandable.appendChild(paragraph);
       });
+      list.insertBefore(expandable, element);
 
-      heading.after(expandable);
+      const expandableBody = document.createElement('div');
+      expandableBody.classList.add('expandable-body');
+      for (let i = 1; i < paragraphs.length; i++) {
+        expandableBody.appendChild(paragraphs[i]);
+      }
+      expandable.insertBefore(expandableBody, paragraphs[0]);
+
+      const expandableHeader = document.createElement('div');
+      expandableHeader.classList.add('expandable-header');
+      expandableHeader.append(heading);
+      expandableHeader.append(paragraphs[0]);
+      expandable.insertBefore(expandableHeader, expandableBody);
 
       expandable.addEventListener('click', () => {
-        const isOpen = expandable.classList.contains('is-open');
-
-        expandable.classList.toggle('is-open', !isOpen);
-        expandable.classList.toggle('is-closed', isOpen);
+        expandable.classList.toggle('is-open');
       });
     });
   });
@@ -88,5 +67,12 @@ export function initPageExpandableTextLists() {
     updateAllExpandableTextHeights();
   });
 
-  window.addEventListener('resize', updateAllExpandableTextHeights);
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+
+    resizeTimeout = setTimeout(() => {
+      updateAllExpandableTextHeights();
+    }, 50);
+  });
 };

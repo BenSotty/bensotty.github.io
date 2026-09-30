@@ -4,11 +4,12 @@ import {initPageExpandableTextLists } from './components/expandable-text-list';
 import { NavBarMenu, NAV_BAR_MENU_ID } from  './components/nav-bar-menu';
 
 export default class OnDomReady {
-  run () {
+  async run () {
     document.querySelector("body").classList.remove("js-not-loaded");
     initPageBookingBtns();
     new NavBarMenu(NAV_BAR_MENU_ID);
     initPageCollapseableLists();
+    await document.fonts.ready;
     initPageExpandableTextLists();
   }
 }
