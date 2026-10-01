@@ -38,6 +38,7 @@
   &.is-open {
     .expandable-body {
       max-height: var(--open-height);
+      padding-top: 1rem;
 
       p:last-child::after {
         opacity: 1;
