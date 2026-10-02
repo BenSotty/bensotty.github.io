@@ -6,6 +6,9 @@
 {% assign relativeUrl = page.url | replace: 'index.html', '' %}
 {% assign url = [site.url,  relativeUrl] | join: ""  %}
 {% assign favicon = '/assets/images/icons/favicon.png' | absolute_url %}
+{% if site.url == "https://benjamin-sotty.fr" %}
+  {% assign trackActivity = true %}
+{% endif %}
 
 <head>
   <meta charset="UTF-8" />
@@ -34,4 +37,7 @@
 
   <link rel="stylesheet" href="{{ '/dist/main.css' | relative_url }}" />
   <script defer src="{{ '/dist/app-min.js' | relative_url }}"></script>
+  {% if trackActivity %}
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="229f79b2-285b-47e9-a664-7a45e80adaf8"></script>
+  {% endif %}
 </head>
