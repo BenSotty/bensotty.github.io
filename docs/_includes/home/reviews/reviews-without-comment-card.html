@@ -1,11 +1,21 @@
-<div class="card shadow h-100">
-  <div class="card-body d-flex flex-column justify-content-between">
-    {% for review in include.reviews %}
-      <div class="position-relative">
-        <span class="text-bold ">{{ review.name }}</span>
-        {% include home/reviews/review-stars.html stars=review.stars %}
-        <span class="m-0 text-small  text-gray-600 position-absolute end-0 bottom-0">{{ review.date }}</span>
+{% assign nbCardIndex = include.nbCard | minus: 1 %}
+
+{% for i in (0..nbCardIndex) %}
+  <div class="{{ include.cardContainerClass }}">
+    <div class="card shadow h-100">
+      <div class="card-body d-flex flex-column justify-content-between">
+        {% for j in (0..2) %}
+          {% assign index = i | times: 3 | plus: j %}
+          {% assign review = include.reviews[index] %}
+          {% if review %}
+            <div class="position-relative">
+              <span class="text-bold ">{{ review.name }}</span>
+              {% include home/reviews/review-stars.html stars=review.stars %}
+              <span class="m-0 text-small  text-gray-600 position-absolute end-0 bottom-0">{{ review.date }}</span>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
-</div>
+{% endfor %}

@@ -11,21 +11,22 @@
     </div>
     <div class="row g-4">
       {% for review-with-comment in site.data.reviews.reviews-with-comment %}
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6 col-lg-4">
           {% include
             home/reviews/review-with-comment-card.html
             review=review-with-comment
           %}
         </div>
       {% endfor %}
-      <div class="col-12 col-md-4">
-        {% include
-          home/reviews/reviews-without-comment-card.html
-          reviews=site.data.reviews.reviews-without-comment
-        %}
-      </div>
+
+      {% include
+        home/reviews/reviews-without-comment-card.html
+        reviews=site.data.reviews.reviews-without-comment
+        cardContainerClass="col-12 col-md-6 col-lg-4"
+        nbCard="2"
+      %}
     </div>
-    <div class="row g-4">
+    <div class="row mt-4">
       <div class="col-12 text-end">
         <div class="display-flex flex-row text-gray-600 ">
           <span>{{ site.data.reviews.stars }},0</span>
@@ -34,7 +35,7 @@
         </div>
         {% include write-review-button.html %}
         <p class="mt-2 text-small text-gray-600">
-          Ces témoignages sont issus de la fiche <a href="{{ site.data.me.Google }}" target="_blank">Google de Benjamin Sotty.</a>
+          Ces témoignages sont issus de la fiche <a href="{{ site.data.me.google }}" target="_blank">Google de Benjamin Sotty.</a>
         </p>
       </div>
     </div>

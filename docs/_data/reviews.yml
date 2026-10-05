@@ -1,4 +1,4 @@
-total: 7
+total: 8
 stars: 5
 write-review-url: https://g.page/r/CWdTPMPEYTSBEAE/review
 reviews-with-comment:
@@ -19,6 +19,9 @@ reviews-with-comment:
     text: Très bon accueil et suivi de Monsieur Sotty. Ostéopathe à l'écoute, bienveillant et doux. Je recommande.
     date: Juillet 2026
 reviews-without-comment:
+    - name: Corentin B.
+      stars: 5
+      date: Octobre 2026
     - name: Gwenn Q.
       stars: 5
       date: Août 2026
