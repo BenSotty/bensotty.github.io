@@ -31,14 +31,14 @@ export class NavBarMenu {
   }
   trackNalinkClicked (link) {
     const isBooking = link.classList.contains('nav-booking-link');
-    const event = isBooking ? "booking-clicked" : "nav-link-clicked";
+    const event = isBooking ? "booking-link-clicked" : "nav-link-clicked";
     const pagePath = window.location.pathname;
     const isHome = pagePath === "/";
     const data = {
       page: isHome ? "home" : pagePath,
       href: link.getAttribute("href")
     };
-    
+
     this.activityTracker.trackEvent(event, data);
   }
 }

@@ -16,7 +16,7 @@
       <p class="card-text m-0">Règlement&nbsp;: {{ include.place.pay-type }}</p>
       <p class="card-text m-0">Réservation&nbsp;: {{ include.place.booking.label }}</p>
       <p class="card-text m-0 text-center">
-        <a href="{{ include.place.booking.href }}" target="_blank" class="btn btn-primary stretched-link rounded-pill px-4">
+        <a href="{{ include.place.booking.href }}" target="_blank" class="booking-cta btn btn-primary stretched-link rounded-pill px-4" data-booking-at="{{ include.place.name }}">
           {% if include.place.booking.type == "web" %}
             Réserver en ligne
           {% else if include.place.booking.type == "tel" %}
