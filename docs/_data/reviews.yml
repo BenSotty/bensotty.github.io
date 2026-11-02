@@ -1,7 +1,11 @@
-total: 8
+total: 10
 stars: 5
 write-review-url: https://g.page/r/CWdTPMPEYTSBEAE/review
 reviews-with-comment:
+  - name: Nicolas L.
+    stars: 5
+    text: Très bonne expérience, à l'écoute, a su identifier la source des douleurs, j'ai marché 125 km en 8 jours par la suite. Pratique douce et m'a donné des conseils utiles. Je recommande.
+    date: Octobre 2026
   - name: Ronan C.
     stars: 5
     text: Bon professionnel, précis.
@@ -19,6 +23,9 @@ reviews-with-comment:
     text: Très bon accueil et suivi de Monsieur Sotty. Ostéopathe à l'écoute, bienveillant et doux. Je recommande.
     date: Juillet 2026
 reviews-without-comment:
+    - name: Ilan I.
+      stars: 5
+      date: Octobre 2026
     - name: Corentin B.
       stars: 5
       date: Octobre 2026
