@@ -1,7 +1,11 @@
-total: 10
+total: 11
 stars: 5
 write-review-url: https://g.page/r/CWdTPMPEYTSBEAE/review
 reviews-with-comment:
+  - name: Maelys M.
+    stars: 5
+    text: Très bonne expérience avec Benjamin ! Ostéopathe à l’écoute, professionnel et bienveillant. Il prend le temps de comprendre les douleurs et de les traiter avec beaucoup de douceur et d’efficacité. Je suis ressortie soulagée. Je recommande vivement !
+    date: Novembre 2026
   - name: Nicolas L.
     stars: 5
     text: Très bonne expérience, à l'écoute, a su identifier la source des douleurs, j'ai marché 125 km en 8 jours par la suite. Pratique douce et m'a donné des conseils utiles. Je recommande.
